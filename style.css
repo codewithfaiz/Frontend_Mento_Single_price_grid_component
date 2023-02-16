@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Poppins:wght@200&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+--Bright_Yellow: hsl(71, 73%, 54%);
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light_Gray);
+    margin: 0 auto;
+}
+.container {
+    margin: 1.5em;
+    background-color: var(--White);
+    border-radius: 0.3rem;
+}
+.community, .Subscription, .whyus {
+    padding: 1.5rem;
+}
+h1{
+    color: var(--Cyan);
+    font-weight: 700;
+    margin: 0px 0px 10px 0px  ;
+}
+.community strong {
+    color: var(--Bright_Yellow);
+    font-weight: 600;
+}
+.community p {
+    color: var(--Grayish_Blue);
+    margin-top: 10px;
+}
+p {
+    color: var(--White);
+}
+h2 {
+    color: var(--White);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.Subscription {
+    background-color: var(--Cyan);
+}
+.Subscription money {
+    color: var(--White);
+    font-size: 25px ;
+    font-weight: bolder;
+    margin-right: 0.5rem;
+}
+.Subscription span {
+    font-size: small;
+}
+.Subscription p {
+    margin: 10px 0px;
+}
+.btn {
+    text-decoration: none;
+    background-color: var(--Bright_Yellow);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;  
+    font-weight: 700;
+    color: var(--White);
+    font-size: 1rem;
+    width: 16.5em;
+    padding: 0.4rem 0;
+}
+.whyus{
+    background-color: var(--Cyan);
+    opacity: 0.9;
+}
+ul li{ 
+    list-style: none;
+    color: var(--White);
+ }
+ @media screen and (min-width: 768px) {
+    main{
+        display: flex;
+        justify-content: center;   
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 650px;
+    }
+    .community{
+        grid-column: span 2;
+    }
+    .card {
+        padding: 2rem 2.5rem;
+      }
+ }
